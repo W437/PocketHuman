@@ -1,0 +1,57 @@
+settings =
+{
+	plugins = 
+	{
+
+		["plugin.google.play.services"] = 
+		{
+			publisherId = "com.szymskidev"
+		},
+
+		["CoronaProvider.ads.vungle"] = 
+		{
+			publisherId = "com.szymskidev"
+		},
+
+		["plugin.chartboost"] = 
+		{
+			publisherId = "com.szymskidev"
+		},
+	},
+
+	orientation =
+	{
+		-- Supported values for orientation:
+		-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+		default = "portrait",
+		supported = { "portraitUpsideDown", }
+	},
+	
+	excludeFiles =
+	{
+		-- Include only the necessary icon files on each platform
+		iphone = { "Icon-*dpi.png", },
+		android = { "Icon.png", "Icon-Small-*.png", "Icon*@2x.png", },
+	},
+
+	--
+	-- iOS Section
+	--
+	-- null
+	--
+	-- Android Section
+	--
+	android =
+	{	
+		versionCode = "1"
+		usesPermissions =
+		{
+			"android.permission.INTERNET",
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            "android.permission.ACCESS_NETWORK_STATE",
+            "android.permission.ACCESS_WIFI_STATE",
+            "android.permission.VIBRATE",
+		},
+	},
+}
